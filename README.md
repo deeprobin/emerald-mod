@@ -34,4 +34,4 @@ For setup instructions please see the [fabric wiki page](https://fabricmc.net/wi
 
 ## License
 
-This template is available under the MIT license.
+This mod is available under the MIT license.
