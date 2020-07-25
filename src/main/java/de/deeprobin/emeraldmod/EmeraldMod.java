@@ -6,7 +6,7 @@ import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class EmeraldMod implements ModInitializer {
+public final class EmeraldMod implements ModInitializer {
 
 	public static final ToolMaterial TOOL_MATERIAL = new EmeraldMaterial();
 	public static final ArmorMaterial ARMOR_MATERIAL = new EmeraldArmorMaterial();
@@ -14,7 +14,7 @@ public class EmeraldMod implements ModInitializer {
 	public static final Item EMERALD_PICKAXE = new EmeraldPickaxe(TOOL_MATERIAL, 2, -2.2F, (new Item.Settings()).group(ItemGroup.TOOLS));
 	public static final Item EMERALD_AXE = new EmeraldAxe(TOOL_MATERIAL, 6.0F, -2.8F, (new Item.Settings()).group(ItemGroup.TOOLS));
 	public static final Item EMERALD_SHOVEL = new ShovelItem(TOOL_MATERIAL, 2.5F, -2.8F, (new Item.Settings()).group(ItemGroup.TOOLS));
-	public static final Item EMERALD_HOE = new HoeItem(TOOL_MATERIAL, 0.0F, (new Item.Settings()).group(ItemGroup.TOOLS));
+	public static final Item EMERALD_HOE = new EmeraldHoe(TOOL_MATERIAL, 0, -2.8F, (new Item.Settings()).group(ItemGroup.TOOLS));
 
 	public static final Item EMERALD_HELMET = new ArmorItem(ARMOR_MATERIAL, EquipmentSlot.HEAD, (new Item.Settings().group(ItemGroup.COMBAT)));
 	public static final Item EMERALD_CHESTPLATE = new ArmorItem(ARMOR_MATERIAL, EquipmentSlot.CHEST, (new Item.Settings().group(ItemGroup.COMBAT)));

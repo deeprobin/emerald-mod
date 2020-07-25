@@ -5,14 +5,15 @@ import net.minecraft.item.ToolMaterial;
 import net.minecraft.item.ToolMaterials;
 import net.minecraft.recipe.Ingredient;
 
-public class EmeraldMaterial implements ToolMaterial {
+public final class EmeraldMaterial implements ToolMaterial {
+
     @Override
     public int getDurability() {
-        return 2048;
+        return 1940;
     }
 
     @Override
-    public float getMiningSpeed() {
+    public float getMiningSpeedMultiplier() {
         return 10.0F;
     }
 
@@ -28,7 +29,7 @@ public class EmeraldMaterial implements ToolMaterial {
 
     @Override
     public int getEnchantability() {
-        return 10;
+        return 9;
     }
 
     @Override
